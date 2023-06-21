@@ -1,0 +1,8 @@
+name: HTTP Client Test
+version: 1
+author: Uri Shaked
+
+steps:
+  - wait-serial: 'Connecting to WiFi'
+  - wait-serial: 'Fetching http://example.org... HTTP 200'
+  - wait-serial: '<title>Example Domain</title>'
